@@ -48,7 +48,7 @@ def run_prediction():
 # Download a single file and make its content available as a string.
 @st.cache(show_spinner=False)
 def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/streamlit/demo-self-driving/master/' + path
+    url = 'https://raw.githubusercontent.com/Miriam2040/PredictSupremeCourtDecision/master/' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
 	
@@ -60,7 +60,9 @@ def main():
     app_mode = st.sidebar.radio("Go to",
         ["Show Instructions", "Run Prediction","Technical Overview","Moral Issues", "Show App Source Code","Show Model Source Code","About"])
     if app_mode == "Show App Source Code":
-        st.code(get_file_content_as_string("streamlit_app.py"))
+        st.code(get_file_content_as_string("App.py"))
+    elif app_mode == "Show Model Source Code":
+        st.code(get_file_content_as_string("Supreme_Court_Direction_Prediction.ipynb")) 	
     elif app_mode == "Run Prediction":
         run_prediction()
       
