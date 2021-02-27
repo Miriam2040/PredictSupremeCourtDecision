@@ -9,7 +9,7 @@ import zipfile
   
 # loading in the model to predict on the data 
 
-archive = zipfile.ZipFile('model.zip', 'rb')
+archive = zipfile.ZipFile('model.zip', 'r')
 classifier = pickle.load(archive.open('model.pkl','rb'))
 archive.close()
 
