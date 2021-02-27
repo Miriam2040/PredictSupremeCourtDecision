@@ -7,8 +7,8 @@ from PIL import Image
 import base64
   
 # loading in the model to predict on the data 
-pickle_in = open('model.pkl', 'rb') 
-classifier = pickle.load(pickle_in) 
+#pickle_in = open('model.pkl', 'rb') 
+#classifier = pickle.load(pickle_in) 
 
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
    
