@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np 
-import pickle 
+import cPickle 
 import urllib
 import streamlit as st 
 from PIL import Image 
@@ -11,7 +11,7 @@ import zipfile
 # loading in the model to predict on the data 
 
 archive = zipfile.ZipFile('model.zip', 'r')
-classifier = pickle.load(archive.open('model.pkl').read())
+classifier = cPickle.load(archive.open('model.pkl').read())
 archive.close()
 
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
