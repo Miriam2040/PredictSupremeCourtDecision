@@ -6,8 +6,6 @@ import streamlit as st
 from PIL import Image 
 import base64
 import zipfile
-import sklearn
-
   
 # loading in the model to predict on the data 
 
