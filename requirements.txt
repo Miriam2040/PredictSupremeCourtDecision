@@ -4,5 +4,4 @@ pickle
 urllib
 streamlit
 base64
-sklearn
 scikit-learn
