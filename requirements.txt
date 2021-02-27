@@ -1,6 +1,5 @@
 scikit-learn
 pandas
 numpy
-urllib
 streamlit
 base64
