@@ -5,10 +5,12 @@ import urllib
 import streamlit as st 
 from PIL import Image 
 import base64
+import zipfile
+
   
 # loading in the model to predict on the data 
-pickle_in = open('model.pkl', 'rb') 
-classifier = pickle.load(pickle_in) 
+archive = zipfile.ZipFile('model.zip', 'r')
+classifier = pickle.load(archive.read('model.pkl'))
 
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
    
