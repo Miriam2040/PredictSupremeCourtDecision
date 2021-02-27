@@ -6,7 +6,7 @@ import streamlit as st
 from PIL import Image 
 import base64
 import zipfile
-import sklearn
+from sklearn.ensemble import RandomForestClassifier
   
 # loading in the model to predict on the data 
 
