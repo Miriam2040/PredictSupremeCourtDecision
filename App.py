@@ -10,7 +10,7 @@ import zipfile
 # loading in the model to predict on the data 
 
 archive = zipfile.ZipFile('model.zip', 'r')
-classifier = pickle.loads(archive.open('model.pkl').read())
+classifier = pickle.load(archive.open('model.pkl'))
 archive.close()
 
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
