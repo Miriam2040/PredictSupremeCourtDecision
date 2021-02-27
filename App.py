@@ -33,7 +33,7 @@ def run_prediction():
     law_type_display = ('Constitution','Constitutional Amendment','Federal Statute','Court Rules','Other','Infrequently litigated statutes','State or local law or regulation','No Legal Provision')
     law_type_options = list(range(len(law_type_display)))
     law_type = st.selectbox('Law Type',law_type_options,format_func=lambda x: law_type_display[x])
-    natural_court = st.text_input("Natural Court (Number between 1301 to 1707", "Type Here") 
+    natural_court = st.text_input("Natural Court (Number between 1301 to 1707)", "Type Here") 
     admin_action = st.text_input("Admin Action (Number between 1 to 118)", "Type Here") 
     result ="" 
       
