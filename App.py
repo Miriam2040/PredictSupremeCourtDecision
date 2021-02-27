@@ -9,10 +9,10 @@ import zipfile
 
   
 # loading in the model to predict on the data 
-#zip_url = 'https://raw.githubusercontent.com/Miriam2040/PredictSupremeCourtDecision/master/model.zip'
-#response = urllib.request.urlopen(zip_url)
-#archive = zipfile.ZipFile('model.zip', 'r')
-#classifier = pickle.load(response.read())
+
+archive = zipfile.ZipFile('model.zip', 'r')
+classifier = pickle.load(archive.open('model.pkl').read())
+archive.close()
 
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
    
