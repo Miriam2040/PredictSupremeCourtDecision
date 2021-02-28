@@ -71,7 +71,7 @@ def main():
     elif app_mode == "About":
         image = Image.open('Team.PNG')
         st.image(image, caption='הצוות',use_column_width=True)
-        st.write("במסגרת קורס בינה מלאכותית ומוסר")
+        st.markdown("<h1 style='text-align: right; color: red;'>במסגרת פרויקט הסיום של קורס בינה מלאכותית</h1>", unsafe_allow_html=True)
       
    
      
