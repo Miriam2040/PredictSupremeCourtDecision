@@ -62,10 +62,10 @@ def main():
     st.sidebar.title("Navigation")
     app_mode = st.sidebar.radio("Go to",
         ["Show Instructions", "Run Prediction","Technical Overview","Moral Issues", "Show App Source Code","Show Model Source Code","About"])
-    if app_mode == "Show App Source Code":
+    if app_mode == "App Source Code":
         st.code(get_file_content_as_string("App.py"))
-    elif app_mode == "Show Model Source Code":
-        st.code(get_file_content_as_string("Supreme_Court_Direction_Prediction.ipynb")) 	
+    elif app_mode == "Model Source Code":
+        st.write("check out this [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
         run_prediction()
       
