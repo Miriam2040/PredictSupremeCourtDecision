@@ -6,10 +6,6 @@ import streamlit as st
 from PIL import Image 
 import base64
 import zipfile
-import collections
-import functools
-import inspect
-import textwrap
 from sklearn.ensemble import RandomForestClassifier
   
 # loading in the model to predict on the data 
@@ -43,7 +39,7 @@ def run_prediction():
     # the prediction function defined above is called to make the prediction  
     # and store it in the variable result 
     
-    if st.click('Predict'):
+    if st.button('Predict'):
        result = prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action) 
        if result == 1:
             result = 'conservative'
