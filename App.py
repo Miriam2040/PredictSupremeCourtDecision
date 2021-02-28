@@ -44,7 +44,7 @@ def run_prediction():
     # and store it in the variable result 
     
     if st.click('Predict'):
-       result = prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action) :
+       result = prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action) 
         if result == 1:
             result = 'conservative'
         else:
