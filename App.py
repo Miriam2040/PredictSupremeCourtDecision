@@ -20,7 +20,7 @@ def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_cou
         [[issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action]]) 
     print(prediction) 
     return prediction 
-      
+@st.cache(show_spinner=False)      
 def run_prediction():
     # the following lines create text boxes in which the user can enter  
     # the data required to make the prediction 
