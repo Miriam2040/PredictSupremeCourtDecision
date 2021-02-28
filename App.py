@@ -14,6 +14,7 @@ archive = zipfile.ZipFile('model.zip', 'r')
 classifier = pickle.load(archive.open('model.pkl','r'))
 archive.close()
 
+@cache_on_button_press('Predict')
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
    
     prediction = classifier.predict( 
@@ -40,13 +41,14 @@ def run_prediction():
     # the below line ensures that when the button called 'Predict' is clicked,  
     # the prediction function defined above is called to make the prediction  
     # and store it in the variable result 
-    if st.button("Predict"): 
-        result = prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action) 
-        if result == 1:
-             result = 'conservative'
-        else:
-             result = 'liberal'		
-        st.success('US supreme court direction will be {}'.format(result)) 
+    result = prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action) 
+    
+    if result:
+	if result == 1:
+        	result = 'conservative'
+    	else:
+      	  result = 'liberal'		
+   	 st.success('US supreme court direction will be {}'.format(result)) 
 
 
 # Download a single file and make its content available as a string.
