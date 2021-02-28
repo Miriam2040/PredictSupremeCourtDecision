@@ -24,17 +24,17 @@ def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_cou
 def run_prediction():
     # the following lines create text boxes in which the user can enter  
     # the data required to make the prediction 
-    issue = st.text_input("Issue (Number between 10010 to 140070)", "Type Here") 
-    case_origin = st.text_input("Case Origin (Number between 1 to 302)", "Type Here") 
-    case_source = st.text_input("Case Source (Number between 1 to 302)", "Type Here") 
+    issue = st.number_input("Issue (Number between 10010 to 140070)", 10010,140070) 
+    case_origin = st.number_input("Case Origin (Number between 1 to 302)", 1,302) 
+    case_source = st.number_input("Case Source (Number between 1 to 302)",1,302) 
     cert_reason_display = ('cert did not arise on cert or cert not granted', 'federal court conflict', 'federal court conflict and to resolve important or significant question','putative conflict','conflict between federal court and state court','state court conflict','federal court confusion or uncertainty','state court confusion or uncertainty','federal court and state court confusion or uncertainty','to resolve important or significant question','to resolve question presented','no reason given','other reason')
     cert_reason_options = list(range(len(cert_reason_display)))
     cert_reason = st.selectbox('Cert Reason', cert_reason_options, format_func=lambda x: cert_reason_display[x])
     law_type_display = ('Constitution','Constitutional Amendment','Federal Statute','Court Rules','Other','Infrequently litigated statutes','State or local law or regulation','No Legal Provision')
     law_type_options = list(range(len(law_type_display)))
     law_type = st.selectbox('Law Type',law_type_options,format_func=lambda x: law_type_display[x])
-    natural_court = st.text_input("Natural Court (Number between 1301 to 1707)", "Type Here") 
-    admin_action = st.text_input("Admin Action (Number between 1 to 118)", "Type Here") 
+    natural_court = st.number_input("Natural Court (Number between 1301 to 1707)", 1301,1707) 
+    admin_action = st.number_input("Admin Action (Number between 1 to 118)",1,118) 
     result ="" 
       
     # the below line ensures that when the button called 'Predict' is clicked,  
