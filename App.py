@@ -44,11 +44,11 @@ def run_prediction():
     result = prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action) 
     
     if result:
-	if result == 1:
-        	result = 'conservative'
-    	else:
-      	  result = 'liberal'		
-   	 st.success('US supreme court direction will be {}'.format(result)) 
+        if result == 1:
+            result = 'conservative'
+        else:
+      	    result = 'liberal'		
+        st.success('US supreme court direction will be {}'.format(result)) 
 
 
 # Download a single file and make its content available as a string.
