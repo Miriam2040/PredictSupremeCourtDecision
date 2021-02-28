@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 # loading in the model to predict on the data 
 
 
-@st.cache(show_spinner=False)
+@st.cache(show_spinner=False,TTL=60)
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
    
     archive = zipfile.ZipFile('model.zip', 'r')
