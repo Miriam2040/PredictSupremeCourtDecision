@@ -72,6 +72,7 @@ def main():
         image = Image.open('Team.PNG')
         st.markdown("<h2 style='text-align: right;'> הצוות</h2>", unsafe_allow_html=True)
         st.image(image, use_column_width=True)
+	st.markdown("<h2 style='text-align: right;'> הפרויקט</h2>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right;'> .הפרויקט שמוצג באתר זה בוצע במסגרת קורס בינה מלאכותית ומוסר</h6>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right;'> .רצינו לנצל את העובדה שהצוות מורכב ממומחי תוכן בעולם בינה המלאכותית וכן מעולם המשפטים</h6>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right;'> .לצורך כך לקחנו בעיה של חיזוי כיוון בית המשפט העליון בארה'ב ובנינו מודל בינה מלאכותית שיעשה זאת</h6>", unsafe_allow_html=True)
