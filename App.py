@@ -21,8 +21,7 @@ archive.close()
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
    
     prediction = classifier.predict( 
-        [[issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action]]) 
-    print(prediction) 
+        [[issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action]])  
     return prediction 
  
 def run_prediction():
@@ -44,7 +43,7 @@ def run_prediction():
     # the prediction function defined above is called to make the prediction  
     # and store it in the variable result 
     
-    if st.click('Predict):
+    if st.click('Predict'):
        result = prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action) :
         if result == 1:
             result = 'conservative'
