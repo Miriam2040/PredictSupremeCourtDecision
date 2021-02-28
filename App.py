@@ -69,7 +69,7 @@ def main():
     elif app_mode == "Run Prediction":
         run_prediction()
     elif app_mode == "About":
-	st.write("במסגרת קורס בינה מלאכותית ומוסר")
+        st.write("במסגרת קורס בינה מלאכותית ומוסר")
       
    
      
