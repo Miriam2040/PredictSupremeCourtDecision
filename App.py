@@ -69,7 +69,7 @@ def main():
     elif app_mode == "Run Prediction":
         run_prediction()
     elif app_mode == "About":
-	image = Image.open('Team.PNG')
+        image = Image.open('Team.PNG')
         st.image(image, caption='הצוות',use_column_width=True)
         st.write("במסגרת קורס בינה מלאכותית ומוסר")
       
