@@ -9,16 +9,17 @@ import zipfile
 from sklearn.ensemble import RandomForestClassifier
   
 # loading in the model to predict on the data 
-classifier = None
+@st.cache(show_spinner=False)
+def get_classifier():
+    archive = zipfile.ZipFile('model.zip', 'r')
+    classifier = pickle.load(archive.open('model.pkl','r'))
+    archive.close()
+    
+    return classifier
 
 def prediction(issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action):   
    
-  
-    if classifier is None:
-        archive = zipfile.ZipFile('model.zip', 'r')
-        classifier = pickle.load(archive.open('model.pkl','r'))
-        archive.close()
-	
+    classifier = get_classifier()	
     prediction = classifier.predict( 
         [[issue, case_origin, case_source, cert_reason,law_type,natural_court,admin_action]])  
     return prediction 
