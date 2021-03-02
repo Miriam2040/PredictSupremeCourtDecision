@@ -88,8 +88,11 @@ def main():
         st.markdown('You insert your case parameters and get model prediction for supreme court direction. Here is video demo:')
         video_file = open('RunPredictionDemo.webm', 'rb')
         video_bytes = video_file.read()
-
         st.video(video_bytes)
+	st.subheader('Technical Overview:')
+	st.markdown('Explanation about technical aspects and work done during ML model cretaion')
+	st.subheader('Moral Issues:')
+	st.markdown('Explanation about moral issues involved in this project')
 
 if __name__=='__main__': 
     main() 
