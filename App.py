@@ -50,7 +50,7 @@ def run_prediction():
        else:
       	    result = 'liberal'		
 		
-       st.success('US supreme court direction will be {}'.format(result)) 
+       st.info('US supreme court direction will be {}'.format(result)) 
 
 
 # Download a single file and make its content available as a string.
