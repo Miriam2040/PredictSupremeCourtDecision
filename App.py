@@ -69,6 +69,18 @@ def main():
         ["Show Instructions", "Run Prediction","Technical Overview","Moral Issues", "App Source Code","Model Source Code","About"])
     if app_mode == "App Source Code":
         st.code(get_file_content_as_string("App.py"))
+    elif app_mode == "Technical Overview":
+        image = Image.open('tech_review.png')
+        st.markdown("<h2 style='text-align: right;'>תיאור טכני</h2>", unsafe_allow_html=True)
+        st.image(image, use_column_width=True)
+        st.markdown("<h4 style='text-align: right;'>השתמשנו בדאטה שנמצא באתר בית המשפט העליון בארצות הברית. הדאטה מכיל רשומות של משפטים שהתקיימו ותיוג של כיוון המשפט - ליברלי מול שמרני </h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: right;'>בתחילה, עברנו על הדאטה וסיננו את הפיצ'רים היכולים להשפיע על ביאס כדוגמת שם השופט, כתובות וכו'. לאחר מכן, בחרנו פיצ'רים רלוונטים באמצעות שיטת פיצ'ר סלקשן.</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: right;'>חילקנו את הדאטה לטריין וטסט כך שהטסט סט הכין כ33% מסך הדאטה שלנו </h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: right;> לאחר מכן, הרצנו מספר מודלים על מנת למצוא את המודל הטוב ביותר עבור הבעיה שלנו, ומצאנו כי זהו מודל של עצי החלטה ראנדום פורסט </h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: right;> מודל זה גם סיפק את התוצאות הטובות ביותר מבחינת דיוק, וגם מודלים מסוג עצי החלטה מאוד טובים בתחום הסברת המודל, כלומר אנו יכולים בקלות יחסית להבין כיצד המודל קיבל את ההחלטה הסופית שלו</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: right;>האפשרות להסביר את המודל היא קריטית, שכן, לראייתנו, אין משמעות למודל שמקבל החלטה ואינו מנמק אותה</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: right;>האתר שלנו מאפשר ללקוח להזין את הנתונים הנדרשים ולקבל תוצאה על כיוון בית המשפט</h4>", unsafe_allow_html=True)
+
     elif app_mode == "Model Source Code":
         st.write("check out this [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
