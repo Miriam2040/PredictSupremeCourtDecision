@@ -84,7 +84,7 @@ def main():
     elif app_mode == "Show Instructions":
         st.header("The application includes following parts:")
         st.subheader('Run prediction:')
-        st.markdown('You insert your case parameters and get model prediction for supreme court decision')
+        st.markdown('You insert your case parameters and get model prediction for supreme court direction')
 
 if __name__=='__main__': 
     main() 
