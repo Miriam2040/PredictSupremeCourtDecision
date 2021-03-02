@@ -86,6 +86,10 @@ def main():
         st.header("The application includes following parts:")
         st.subheader('Run prediction:')
         st.markdown('You insert your case parameters and get model prediction for supreme court direction')
+        video_file = open('streamlit-App-2021-03-02-14-03-41.webm', 'rb')
+        video_bytes = video_file.read()
+
+        st.video(video_bytes)
 
 if __name__=='__main__': 
     main() 
