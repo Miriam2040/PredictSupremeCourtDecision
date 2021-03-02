@@ -83,6 +83,7 @@ def main():
         st.markdown("<h6 style='text-align: right;'> .האתר הזה מסביר את העבודה שנעשתה ומנגיש את המודל לשימוש</h6>", unsafe_allow_html=True)
     elif app_mode == "Show Instructions":
         st.header("The application includes following parts:")
+	st.markdown('Run prediction')
 
 if __name__=='__main__': 
     main() 
