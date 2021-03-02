@@ -90,9 +90,15 @@ def main():
         video_bytes = video_file.read()
         st.video(video_bytes)
         st.subheader('Technical Overview:')
-        st.markdown('Explanation about technical aspects and work done during ML model cretaion')
+        st.markdown('Explanation about technical aspects and work done during ML model creation')
         st.subheader('Moral Issues:')
         st.markdown('Explanation about moral issues involved in this project')
+        st.subheader('App Source Code:')
+        st.markdown('This application source code')
+        st.subheader('Model Source Code:')
+        st.markdown('ML model training notebook link')
+        st.subheader('About:')
+        st.markdown('Details about this project')
 
 if __name__=='__main__': 
     main() 
