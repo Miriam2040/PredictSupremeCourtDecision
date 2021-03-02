@@ -82,7 +82,7 @@ def main():
         st.markdown("<h4 style='text-align: right;>האתר שלנו מאפשר ללקוח להזין את הנתונים הנדרשים ולקבל תוצאה על כיוון בית המשפט</h4>", unsafe_allow_html=True)
 
     elif app_mode == "Model Source Code":
-        st.write("check out this [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
+        st.write("Model training source code is here: [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
         run_prediction()
     elif app_mode == "About":
