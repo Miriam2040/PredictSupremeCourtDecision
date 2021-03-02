@@ -37,7 +37,7 @@ def run_prediction():
     law_type_options = list(range(len(law_type_display)))
     law_type = st.selectbox('Law Type',law_type_options,format_func=lambda x: law_type_display[x])
     natural_court = st.number_input("Natural Court (Number between 1301 to 1707)", 1301,1707) 
-    admin_action = st.number_input("Admin Action (Number between 1 to 118)",1,118) 
+    admin_action = st.number_input("Admin Action (Number between 0 to 118)",0,118) 
       
     # the below line ensures that when the button called 'Predict' is clicked,  
     # the prediction function defined above is called to make the prediction  
