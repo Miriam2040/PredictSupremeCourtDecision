@@ -81,6 +81,8 @@ def main():
         st.markdown("<h6 style='text-align: right;'> .רצינו לנצל את העובדה שהצוות מורכב ממומחי תוכן בעולם בינה המלאכותית וכן מעולם המשפטים</h6>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right;'> .לצורך כך לקחנו בעיה של חיזוי כיוון בית המשפט העליון בארה'ב ובנינו מודל בינה מלאכותית שיעשה זאת</h6>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right;'> .האתר הזה מסביר את העבודה שנעשתה ומנגיש את המודל לשימוש</h6>", unsafe_allow_html=True)
+   elif app_mode == "Show Instructions":
+	st.header("The application includes following parts:")
 
 if __name__=='__main__': 
     main() 
