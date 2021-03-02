@@ -48,7 +48,15 @@ def run_prediction():
        #if result == 1:
         #    result = 'conservative'
        #else:
-      #	    result = 'liberal'			
+      #	    result = 'liberal'		
+       st.info(issue)
+       st.info(case_origin)
+       st.info(case_source)
+       st.info(cert_reason)
+       st.info(law_type)
+       st.info(natural_court)
+       st.info(admin_action)
+			   
        st.success('US supreme court direction will be {}'.format(result)) 
 
 
