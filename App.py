@@ -94,7 +94,17 @@ def main():
         col1.button('הטיה')
         col2.button('פרטיות')
         col3.button('לשון הרע')
-        st.markdown("<button style='color: blue;'></button>", unsafe_allow_html=True)
+        st.markdown(
+    """
+<style>
+.button {
+    background-color: blue;
+    color: white;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
         col11, col22, col33= st.beta_columns(3)
         col33.button('אך תחילה עלינו להבין את מקומה של הבינה המלאכותית בארצות הברית')
     elif app_mode == "Model Source Code":
