@@ -62,6 +62,7 @@ def get_file_content_as_string(path):
 	
 # this is the main function in which we define our webpage  
 def main(): 
+    st.markdown('<style>.button{background-color: Blue;}</style>',unsafe_allow_html=True)
     image = Image.open('Court.jpg')
     st.image(image, use_column_width=True)
     st.sidebar.title("Navigation")
