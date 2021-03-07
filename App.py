@@ -98,7 +98,7 @@ def main():
         col11, col22, col33= st.beta_columns(3)
         col33.button('אך תחילה עלינו להבין את מקומה של הבינה המלאכותית בארצות הברית')
         st.write("--------------------------------------------------------------")
-	st.write("(1) About the Court, SUPREME COURT OF THE UNITED STATES [link](https://www.supremecourt.gov/about/about.aspx)")
+        st.write("(1) About the Court, SUPREME COURT OF THE UNITED STATES [link](https://www.supremecourt.gov/about/about.aspx)")
     elif app_mode == "Model Source Code":
         st.write("Model training source code is here: [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
