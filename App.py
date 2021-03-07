@@ -96,7 +96,8 @@ def main():
         col3.button('לשון הרע')
         st.markdown('<style>.button{background-color: Blue;}</style>',unsafe_allow_html=True)
         col11, col22= st.beta_columns(2)
-        col22.button('אך תחילה עלינו להבין את מקומה של הבינה המלאכותית בארצות הברית')
+        if col22.button('אך תחילה עלינו להבין את מקומה של הבינה המלאכותית בארצות הברית'):
+	     st.markdown("<h4 style='text-align: right;'>ארצות הברית פועלת בשנים האחרונות במספר ערוצים כדי לקדם את היתרונות של טכנולוגית הבינה מלאכותית לצד התייחסותה לאתגרים האתיים. זאת כדי לאפשר לארצות הברית להמשיך ולהתברג כמעצמה בתחום הבינה המלאכותית</h2>", unsafe_allow_html=True)
         st.write("--------------------------------------------------------------")
         st.write("(1) About the Court, SUPREME COURT OF THE UNITED STATES [link](https://www.supremecourt.gov/about/about.aspx)")
     elif app_mode == "Model Source Code":
