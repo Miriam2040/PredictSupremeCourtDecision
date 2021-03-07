@@ -104,7 +104,7 @@ def main():
               st.markdown("<h4 style='text-align: right;'></h4>", unsafe_allow_html=True)
               st.markdown("<h4 style='text-align: right;'></h4>", unsafe_allow_html=True)
               st.markdown("<h4 style='text-align: right;'></h4>", unsafe_allow_html=True)
-	col2.button('פרטיות')
+        col2.button('פרטיות')
         col3.button('לשון הרע')
         st.markdown('<style>.button{background-color: Blue;}</style>',unsafe_allow_html=True)
         col11, col22= st.beta_columns(2)
