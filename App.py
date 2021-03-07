@@ -91,8 +91,10 @@ def main():
         st.markdown("<h4 style='text-align: right;'>.העולם הטכנולוגי בכלל ומערכות בינה מלאכותית בפרט מביאים עימם קדימות, חידוש, ייעול ואפשרויות פורצות דרך אשר עשויות לחסוך זמן ומשאבים.  לצד זה אנו מודעים לסיכונים לפגיעה בזכויות מהותית בחיי האנושות. לכן כדי שתוכלו להרגיש בטוחים, טרם השימוש במערכת לחיזוי גישתו של בית המשפט, נציג בפינכם את התהליך המשפטי שעברה המערכת שלנו בצמוד להליך הפיתוח, כאשר השמירה על זכויותיכם היוותה ערך עליון עבורנו לאורך כל הדרך. תחילה סקרנו את כלל הבעיות המשפטיות והמוסריות אשר עשויות להיפגע בעת השימוש במערכת, וצמצמנו את הפגיעה ככל הניתן, תוך שמירה על הדיוק ויעילות התוצר</h2>", unsafe_allow_html=True)
         st.markdown("<h4 style='text-align: right;'>:להלן הזכויות שחרטו על דגלנו כדי להפוך את המערכת למוסרית ולהגן עליכם בכל תרחיש אפשרי, התמקדנו בחוקי הממשל הפדרלי בארצות הברית, לאור העובדה שהמערכת שלנו מותאמת לבית המשפט העליון, אך נבהיר גם כיצד החוק פועל במדינת ישראל</h2>", unsafe_allow_html=True)
         col1, col2, col3, col4 = st.beta_columns(4)
-        col1.button('בךךך')
-        col2.button('גג')
+        col1.button('הטיה')
+        col2.button('פרטיות')
+        col3.button('לשון הרע')
+	col4.button('הבינה המלאכותית בארצות הברית')
     elif app_mode == "Model Source Code":
         st.write("Model training source code is here: [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
