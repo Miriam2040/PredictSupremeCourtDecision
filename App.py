@@ -94,7 +94,7 @@ def main():
         col1.button('הטיה')
         col2.button('פרטיות')
         col3.button('לשון הרע')
-	col4.button('הבינה המלאכותית בארצות הברית')
+        col4.button('הבינה המלאכותית בארצות הברית')
     elif app_mode == "Model Source Code":
         st.write("Model training source code is here: [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
