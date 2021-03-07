@@ -97,7 +97,7 @@ def main():
         st.markdown(
     """
 <style>
-.button {
+button {
     background-color: blue;
     color: white;
 }
