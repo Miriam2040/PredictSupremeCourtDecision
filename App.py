@@ -83,8 +83,9 @@ def main():
         st.markdown("<h4 style='text-align: right;'> מודל זה גם סיפק את התוצאות הטובות ביותר מבחינת דיוק, וגם מודלים מסוג עצי החלטה מאוד טובים בתחום הסברת המודל, כלומר אנו יכולים בקלות יחסית להבין כיצד המודל קיבל את ההחלטה הסופית שלו</h4>", unsafe_allow_html=True)
         st.markdown("<h4 style='text-align: right;'>האפשרות להסביר את המודל היא קריטית, שכן, לראייתנו, אין משמעות למודל שמקבל החלטה ואינו מנמק אותה</h4>", unsafe_allow_html=True)
         st.markdown("<h4 style='text-align: right;'>האתר שלנו מאפשר ללקוח להזין את הנתונים הנדרשים ולקבל תוצאה על כיוון בית המשפט</h4>", unsafe_allow_html=True)
+	
     elif app_mode == "Moral Issues":
-	st.markdown("<h2 style='text-align: right;'>אצלנו הזכויות שלך מוגנות</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: right;'>אצלנו הזכויות שלך מוגנות</h2>", unsafe_allow_html=True)
     elif app_mode == "Model Source Code":
         st.write("Model training source code is here: [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
