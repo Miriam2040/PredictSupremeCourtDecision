@@ -86,6 +86,7 @@ def main():
 	
     elif app_mode == "Moral Issues":
         st.markdown("<h2 style='text-align: right;'>אצלנו הזכויות שלך מוגנות</h2>", unsafe_allow_html=True)
+	st.markdown("<h4 style='text-align: right;'>המערכת שלנו, המבוססת על בינה מלאכותית היא ייחודית בנוף שכן היא תוצר של שילוב בין שני עולמות תוכן מרתקים, מדעי המחשב ומשפטים. כך, יחד יצרנו עבורכם את המערכת האיכותית והמדויקת ביותר וזאת ללא פשרות על הזכויות שלכם. המערכת תעזור לאוכלוסיית עורכי הדין לחזות את גישתו של בית המשפט העליון בארצות הברית, ליברלי או שמרני, זאת על ידי הכנסת מספר פרמטרים למערכת. לאחר מספר רגעים תוכלו לדעת בדיוק כיצד עליכם לעבוד על כתב התביעה או כתב ההגנה שלכם ואיזה טענות ייקחו את הלקוח שלכם אל עבר הניצחון. </h2>", unsafe_allow_html=True)
     elif app_mode == "Model Source Code":
         st.write("Model training source code is here: [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
     elif app_mode == "Run Prediction":
