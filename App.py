@@ -165,7 +165,7 @@ def main():
               st.write("(5)חוק איסור לשון הרע, התשכ'ה–1965")
               st.write("(6)רע'א 4447/07 מור נ' ברק אי.טי.סי. [1995] החברה לשרותי בזק בינלאומיים בע'מ, פ'ד סג(3) 664 (2010)")
               st.write("(7)רע'א 1239/19 שאול נ' חברת ניידלי תקשורת בע'מ, פס' 5–6 לפסק דינה של השופטת וילנר (פורסם באר'ש, 8.1.2020)")
-	st.write("--------------------------------------------------------------")
+        st.write("--------------------------------------------------------------")
         st.write("(1) About the Court, SUPREME COURT OF THE UNITED STATES [link](https://www.supremecourt.gov/about/about.aspx)")
     elif app_mode == "Model Source Code":
         st.write("Model training source code is here: [link](https://github.com/Miriam2040/PredictSupremeCourtDecision/blob/main/Supreme_Court_Direction_Prediction.ipynb)")	
