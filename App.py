@@ -147,7 +147,7 @@ def main():
         st.header("The application includes following parts:")
         st.subheader('Run prediction:')
         st.markdown('You insert your case parameters and get model prediction for supreme court direction. Here is video demo:')
-        video_file = open('RunPredictionDemo.webm', 'rb')
+        video_file = open('RunPredictionDemo.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
         st.subheader('Technical Overview:')
