@@ -110,7 +110,7 @@ def main():
               st.markdown("<h5 style='text-align: right;'>(3)רועי גולדשמידט אפליה אלגוריתמית במערכות המבוססות על בינה מלאכותית (הכנסת, מרכז המחקר והמידע, 2020)</h5>", unsafe_allow_html=True)
               st.markdown("<h5 style='text-align: right;'>(4)שם</h5>", unsafe_allow_html=True)
               st.markdown("<h5 style='text-align: right;'>(5)שם</h5>", unsafe_allow_html=True)
-	      st.write("(6)[link](https://www.geektime.co.il/discrimination-in-ai-ml)")
+              st.write("(6)[link](https://www.geektime.co.il/discrimination-in-ai-ml)")
 	      st.markdown("<h5 style='text-align: right;'>(7)גולדשמידט, לעיל ה'ש 3</h5>", unsafe_allow_html=True)
 	      st.markdown("<h5 style='text-align: right;'>(8)שם</h5>", unsafe_allow_html=True)
 	      st.markdown("<h5 style='text-align: right;'>(9)שם</h5>", unsafe_allow_html=True)
