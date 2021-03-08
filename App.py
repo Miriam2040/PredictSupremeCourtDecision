@@ -84,7 +84,7 @@ def main():
         st.markdown("<h4 style='text-align: right;'>האפשרות להסביר את המודל היא קריטית, שכן, לראייתנו, אין משמעות למודל שמקבל החלטה ואינו מנמק אותה</h4>", unsafe_allow_html=True)
         st.markdown("<h4 style='text-align: right;'>האתר שלנו מאפשר ללקוח להזין את הנתונים הנדרשים ולקבל תוצאה על כיוון בית המשפט</h4>", unsafe_allow_html=True)
         st.markdown("<h3 style='text-align: right;'>תוצאות</h3>", unsafe_allow_html=True)
-        st.markdown("<h4 style='text-align: right;'>אחרי שאימנו את המודל של סט האימון בדקנו את ביצועיו באמצעות סט הטסט. עבור סט הטסט קיבלנו דיוק של 78% שזה משמעותית יותר טוב מניחוש רגיל של 50% דיוק</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: right;'>אחרי שאימנו את המודל של סט האימון בדקנו את ביצועיו באמצעות הטסט סט. עבור הטסט סט קיבלנו דיוק של 78% שזה משמעותית יותר טוב מניחוש רגיל של 50% דיוק</h4>", unsafe_allow_html=True)
         st.markdown("<h4 style='text-align: right;'>כמו כן, בדקנו מהי חשיבות הפיצ'רים בהשפעה על תוצאות המודל</h4>", unsafe_allow_html=True)
         st.image("FeaturesImportance.PNG") 
     elif app_mode == "Moral Issues":
