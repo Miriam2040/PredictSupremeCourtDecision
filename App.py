@@ -147,7 +147,7 @@ def main():
         st.write("(1) Dr. Matt Turek, Explainable Artificial Intelligence (XAI), DARPA [link](https://www.darpa.mil/program/explainable-artificial-intelligence)")
         st.write("(2) 'AI Principles: Recommendations on the Ethical Use of Artificial Intelligence by the Department of Defense', Defense Innovation Board, October 2019.")
         st.write("(3) Russell T. Vought, Memorandum for the Heads of Executive Departments and Agencies [link](https://www.whitehouse.gov/wp-content/uploads/2020/01/Draft-OMB-Memo-on-Regulation-of-AI-1-7-19.pdf)")
-   elif app_mode == "Show Instructions":
+    elif app_mode == "Show Instructions":
         st.header("The application includes following parts:")
         st.subheader('Run prediction:')
         st.markdown('You insert your case parameters and get model prediction for supreme court direction. Here is video demo:')
