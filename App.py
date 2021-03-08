@@ -191,7 +191,7 @@ def main():
         st.write("(3) Russell T. Vought, Memorandum for the Heads of Executive Departments and Agencies [link](https://www.whitehouse.gov/wp-content/uploads/2020/01/Draft-OMB-Memo-on-Regulation-of-AI-1-7-19.pdf)")
     elif app_mode == "Show Instructions":
         st.header("The application includes following parts:")
-        st.subheader('Run prediction:')
+        st.subheader('Run Prediction:')
         st.markdown('You insert your case parameters and get model prediction for supreme court direction. Here is video demo:')
         video_file = open('RunPredictionDemo.mp4', 'rb')
         video_bytes = video_file.read()
