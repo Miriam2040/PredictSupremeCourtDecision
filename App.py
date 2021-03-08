@@ -118,7 +118,7 @@ def main():
               st.write("(11)U.S. CONST. amend. XIV")
               st.write("(12)Robin Bleiweis, The Equal Rights Amendment: What You Need to Know, CENTER FOR AMERICAN PROGRESS (Jan. 29, 2020)")
               st.write("(13)Reed v. Reed, 404 U.S. 71 (November 22, 1971)")
-	      st.write("(14)Frontiero v. Richardson, 411 U.S. 677 (May 14, 1973")
+              st.write("(14)Frontiero v. Richardson, 411 U.S. 677 (May 14, 1973")
 	      st.write("(15)בג'ץ 6427/02 התנועה לאיכות השלטון בישראל נ' הכנסת, פ'ד סא(1) 619, פס' 26 לפסק דינו של השופט ברק (2005)")
 	      st.write("(16)אהרן ברק כבוד האדם – הזכות החוקתית ובנותיה 668 (2014)")
         if col2.button('פרטיות'):
